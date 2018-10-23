@@ -1,20 +1,18 @@
 package Tester;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import mx.com.superq.Factura;
+
 public class TesterPlayer {
 
 	public static void main(String[] args) 
 	{
-			DVDPlayer dvd = new DVDPlayer();
-			MP3Player mp3 = new MP3Player(); 
-			BlueRayPlayer br = new BlueRayPlayer();
-			
-			Tester test = new Tester();
-			
-			test.testDvd(dvd);
-			System.out.println("\n");
-			test.testMp3(mp3);
-			System.out.println("\n");
-			test.testBlueRay(br);
+		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+		Tester tester = applicationContext.getBean("tester",Tester.class);
+		
+		tester.test();
 			
 	}
 
