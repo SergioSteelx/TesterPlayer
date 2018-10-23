@@ -1,0 +1,14 @@
+*.xls
+.idea/
+.gradle/
+out/
+.iml
+*.bin
+*.class
+*.zip
+*.rar
+*.pdf
+.classpath
+.settings/
+bin/
+.project
