@@ -1,7 +1,11 @@
 package Tester;
 
-public class MP3Player 
+public class MP3Player implements Device
 {
+	public void nombre()
+	{
+		System.out.println("Reproductor MP3");
+	}
 	public void turnON()
 	{
 		System.out.println("Encender Reproductor");

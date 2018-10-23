@@ -1,7 +1,11 @@
 package Tester;
 
-public class DVDPlayer 
+public class DVDPlayer implements Device
 {
+	public void nombre()
+	{
+		System.out.println("Reproductor DVD");
+	}
 	public void turnON()
 	{
 		System.out.println("Encender Reproductor");

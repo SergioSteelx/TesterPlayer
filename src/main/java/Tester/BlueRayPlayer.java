@@ -1,7 +1,11 @@
 package Tester;
 
-public class BlueRayPlayer 
+public class BlueRayPlayer implements Device
 {
+	public void nombre()
+	{
+		System.out.println("Reproductor BlueRay");
+	}
 	public void turnON()
 	{
 		System.out.println("Encender Reproductor");
