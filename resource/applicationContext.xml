@@ -8,5 +8,15 @@
          http://www.springframework.org/schema/context
          http://www.springframework.org/schema/context/spring-context.xsd
          http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+	
 	<bean id="factura" class="mx.com.superq.Factura"/>
+	
+	<bean id="dvdPlayer" class="Tester.DVDPlayer"/>
+	<bean id="mp3Player" class="Tester.MP3Player"/>
+	<bean id="blueRayPlayer" class="Tester.BlueRayPlayer"/>
+	<bean id="smartphone" class = "Tester.Smartphone"/>
+	
+	<bean id="tester" class="Tester.Tester">
+		<property name="device" ref="smartphone"/>
+	</bean>
 </beans>
