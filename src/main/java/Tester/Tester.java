@@ -2,31 +2,19 @@ package Tester;
 
 public class Tester 
 {
-	public void testDvd(DVDPlayer dvd)
+	private Device device;
+
+	public void test()
 	{
-		System.out.println("Reproductor DVD");
-		dvd.turnON();
-		dvd.play();
-		dvd.stop();
-		dvd.turnOFF();
+		device.nombre();
+		device.turnON();
+		device.play();
+		device.stop();
+		device.turnOFF();
+	}
+	public void setDevice(Device device) {
+		this.device = device;
 	}
 	
-	public void testMp3(MP3Player mp3)
-	{
-		System.out.println("Reproductor MP3");
-		mp3.turnON();
-		mp3.play();
-		mp3.stop();
-		mp3.turnOFF();
-	}
-	
-	public void testBlueRay(BlueRayPlayer br)
-	{
-		System.out.println("Reproductor BlueRay");
-		br.turnON();
-		br.play();
-		br.stop();
-		br.turnOFF();
-	}
 	
 }
