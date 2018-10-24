@@ -9,34 +9,5 @@
          http://www.springframework.org/schema/context/spring-context.xsd
          http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 	
-	<bean id="factura" class="mx.com.superq.Factura"/>
-	
-	<bean id="dvdPlayer" class="Tester.DVDPlayer">
-		<property name="playlist" ref="playListRock"/>
-	</bean>
-	<bean id="mp3Player" class="Tester.MP3Player">
-		<property name="playlist" ref="playListMetal"/>
-	</bean>
-	<bean id="blueRayPlayer" class="Tester.BlueRayPlayer"/>
-	<bean id="smartphone" class = "Tester.Smartphone"/>
-	
-	<bean id="playListMetal" class = "Tester.Metal"/>
-	<bean id="playListRock" class = "Tester.Rock"/>
-	<bean id="playListBalada" class = "Tester.Balada"/>
-	
-	<bean id="testerDvd" class="Tester.Tester">
-		<property name="device" ref="dvdPlayer"/>
-	</bean>
-	
-	<bean id="testerMp3" class="Tester.Tester">
-		<property name="device" ref="mp3Player"/>
-	</bean>
-	
-	<bean id="testerBLR" class="Tester.Tester">
-		<property name="device" ref="blueRayPlayer"/>
-	</bean>
-	
-	<bean id="testerSP" class="Tester.Tester">
-		<property name="device" ref="smartphone"/>
-	</bean>
+
 </beans>
