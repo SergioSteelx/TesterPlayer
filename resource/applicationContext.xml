@@ -11,7 +11,9 @@
 	
 	<bean id="factura" class="mx.com.superq.Factura"/>
 	
-	<bean id="dvdPlayer" class="Tester.DVDPlayer"/>
+	<bean id="dvdPlayer" class="Tester.DVDPlayer">
+		<property name="playlist" ref="playListRock"/>
+	</bean>
 	<bean id="mp3Player" class="Tester.MP3Player">
 		<property name="playlist" ref="playListMetal"/>
 	</bean>
